@@ -1,6 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -12,9 +14,148 @@
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
-  </head>
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+      <meta content='Political discourse is broken - we have a solution.' name='description'>
+  <meta content='discourse politics' name='keywords'>
+  <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+  <script>
+  </script>
+</head>
+
+<body>
+  <header class='gradient'>
+    <div class='container'>
+      <div class='hero'></div>
+      <div class='logo' style="font-size: xx-large;">
+        <a href='/'>
+        VoteSounder
+        </a>
+      </div>
+      <h1>Better political discourse!</h1>
+      <div class='visible-xs-block'>
+        <h2>Political discourse is broken.</h2>
+        <p><strong>We</strong> have a <em>solution.</em> We are building a forum focused on fostering meaningful discourse on elections.</p>
+      </div>
+      <div class='hidden-xs'>
+        <h2><strong>Political discourse is broken.</strong> <em> We have a solution. We are building a forum focused on fostering meaningful discourse on elections.</em></h2>
+        <p>Join us to make the web a better place for political discourse.</p>
+      </div>
+    </div>
+  </header>
+  <section class='call_to_action'>
+    <div class='container'>
+      <div class='visible-xs-block'>
+      <form>
+                    <div class='feedback' style="display:block;">
+              <p>
+                Coming soon!
+                Stay tuned.
+              </p>
+            </div>
+      </form>
+      </div>
+      <div class='hidden-xs'>
+
+      <form>
+
+          <div class='feedback' style="display:block;">
+            Coming soon! Stay tuned.
+          </div>
+      </form>
+      </div>
+    </div>
+  </section>
+  <div class='modal fade' id='call_to_action_modal' role='dialog'>
+    <div class='modal-dialog'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <h4 class='modal-title'>Straight to your inbox, every Monday!</h4>
+        </div>
+        <div class='modal-body'>
+          <form action='/join_wait_list' class='call_to_action_form mailchimp' method='post' role='form'>
+            <div class='fields'>
+              <input class='first_name' id='fname' name='FNAME' placeholder='First Name' type='text'>
+              <input class='email' id='email' name='EMAIL' placeholder='Email address' type='email'>
+              <button value=''>
+                I'm in
+              </button>
+              <small>
+Unsubscribe at any time
+</small>
+            </div>
+            <div class='feedback' style="display:block;">
+              <p>
+                Good job!
+              </p>
+              <p>
+                You can expect your first batch of job leads on Monday.
+              </p>
+              <p>
+                Onwards and upwards fellow designer!
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class='content' style="display:none;">
+    <div class='container'>
+      <div class='hidden-md hidden-lg'>
+        <div class='post_job box'>
+          <div class='content'>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-8'>
+          <section class='job_section'>
+          </section>
+        </div>
+        <div class='col-md-4'>
+          <div class='box_items'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="">
+    <div style="" class="footer-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>VoteSounder: Better political discourse</h3>
+          </div>
+          <div class="col-sm-8">
+            <ul class="list-inline">
+              <li>
+                <div>Other VoteSounder productions:</div>
+              </li>
+              <li style="display:none;">
+                <a href="http://forkmyreligion.com" class=""><i class=""></i>ForkMyReligion</a>
+              </li>
+              <li>
+                <a href="http://weebrix.com" class=""><i class=""></i>WeeBrix</a>
+              </li>
+              <li>
+                <a href="http://pickingplaces.com" class=""><i class=""></i>PickingPlaces</a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h5></h5>
+            <p class="copyright-notice">Copyright © VoteSounder 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
