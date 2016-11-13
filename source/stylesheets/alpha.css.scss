@@ -1,0 +1,154 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+
+$positive-gold-dark: #B27900;
+$positive-gold-bright: #FFAD00;
+$positive-plus: #196EFF;
+$positive-plus-plus: #005EFF;
+$positive-minus: #5F97F7;
+$positive-minus-minus: #8BB3F8;
+
+
+/*below needed to stop dropdown disappearing on mobiles*/
+/*$grid-float-breakpoint:     380px !default;*/
+/*below needs to sync with margin top of icon header-user-icon*/
+/*$navbar-height: 40px;*/
+
+$navbar-default-bg: $positive;
+$navbar-default-color: white;
+
+$stitched-bg: #d3d3d3;
+$dapper-orange: #ff5f1f;
+$fb-purple: #354c8c;
+$theme-text-color: #3498db;
+
+$winning-green: #5dbf7a;
+$readlang-green: #3b9656;
+$readlang-green-plus:             darken($readlang-green, 5%) !default;
+$landing-green: #18bc9c;
+$storify-blue: #3a98d9;
+$lighter-storify-blue: #65aee1;
+$meetup-orange: #C2880A;
+$meetup-blue: #669bc4;
+
+$primary-blue: #337ab7;
+$primary-blue-plus:             darken($primary-blue, 5%) !default;
+
+$purple-blue: #1b557a;
+
+$general-bkgrd: #e1e1e3;
+/*#f4f4f4;*/
+/*almost lightgray below*/
+$secondary-bkgrd: #f4f4f4;
+/*$link-blue: #2980b9;  - this was the old navbar default background color*/
+/*#3498db; default blue primary color
+#f54; strong orange*/
+
+$light-highlight-color: #aeffd3;
+/*#aeffd3 - pale green*/
+
+$font-family-sans-serif: "Open Sans", "Roboto", Helvetica, Arial, sans-serif;
+
+
+$main-font-color: white;
+/*above had been rgb(100, 100, 100) before*/
+$darker-font-color: rgb(100, 100, 100);
+/*above 2 vars not being imported automatically into imports below*/
+
+/*// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "from_weebrix";
+@import "footer";
+@import "banner";
+@import "special";
+@import "shame";
+@import "box";*/
+
+
+/*
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+*/
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  /*font-size: 62.5%;*/
+  font-size: 60%;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.6em;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(23, 61, 80);
+  background-color: rgb(23, 61, 80);
+}
+
+a {
+  /*color: rgb(233, 125, 104);*/
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+#page-wrapper {
+  padding-top: 3em;
+}
+
+body.landing #page-wrapper {
+  padding-top: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+  url("/images/paper_in_hand-ff5729b9d1b5c0954f3be08c79731d71.jpg");
+  /*below ensures that it fits even as a particular item gets longer..*/
+  background-size: cover;
+}
+
+/**/
+
+
+
+
+/**/
+
+
