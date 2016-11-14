@@ -79,10 +79,12 @@ $main-font-color: white;
 $darker-font-color: rgb(100, 100, 100);
 /*above 2 vars not being imported automatically into imports below*/
 
-/*// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
-@import "bootstrap-sprockets";
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+/*@import "bootstrap-sprockets";*/
 @import "bootstrap";
-@import "from_weebrix";
+
+
+/*@import "from_weebrix";
 @import "footer";
 @import "banner";
 @import "special";
