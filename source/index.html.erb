@@ -2,12 +2,129 @@
 title: Welcome to VoteSounder
 ---
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
+
+<header class='gradient'>
+  <div class='container'>
+    <div class='hero'></div>
+    <div class='logo' style="font-size: xx-large;">
+      <a href='/'>
+        VoteSounder
+        </a>
+    </div>
+    <h1>Better political discourse!</h1>
+    <div class='visible-xs-block'>
+      <h2>Political discourse is broken.</h2>
+      <p><strong>We</strong> have a <em>solution.</em> We are building a forum focused on fostering meaningful discourse on elections.</p>
+    </div>
+    <div class='hidden-xs'>
+      <h2><strong>Political discourse is broken.</strong> <em> We have a solution. We are building a forum focused on fostering meaningful discourse on elections.</em></h2>
+      <p>Join us to make the web a better place for political discourse.</p>
+    </div>
   </div>
-  <h1>VoteSounder is Running</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+</header>
+<section class='call_to_action'>
+  <div class='container'>
+    <div class='visible-xs-block'>
+      <form>
+        <div class='feedback' style="display:block;">
+          <p>
+            Coming soon! Stay tuned111.
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class='hidden-xs'>
+      <form>
+        <div class='feedback' style="display:block;">
+          Coming soon! Stay tuned22222.
+          <section class="">
+            <header class="major">
+              <h2>
+        About PickingPlaces
+        </h2>
+              <p></p>
+            </header>
+            <div class="row about-row">
+              <div class="col-md-10 col-md-offset-1 col-sm-12">
+                <p style="text-align: center;font-size: large;margin-bottom: 30px;">
+                  What if there was one place where people looking for a property could do all their research? One place to collect all the information about properties they are interested in - schools nearby, parking, crime-rates etc. And what if with a click they could share this information with their friends to get feedback and advice? Well, that is exactly what PickingPlaces provides.
+                </p>
+                <h3>
+          What we offer
+        </h3>
+                <p>
+                  PickingPlaces provides an easy way to get feedback from your friends. Its completely free and you do not need to create an account to use it.
+                </p>
+                <h3 style="display:none;">
+          What information about a property can be automatically retrieved from a url?
+        </h3>
+                <p>
+                </p>
+                <h3 style="display:none;">
+          Coming soon
+        </h3>
+                <p style="display:none;">
+                  There are many improvements that the PickingPlaces team are working on at the moment. For now, the priority is on improving the information we are able to retrieve about properties. Bookmarklet on its way. app??? A section for homeowners...
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<div class='modal fade' id='call_to_action_modal' role='dialog'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <h4 class='modal-title'>Straight to your inbox, every Monday!</h4>
+      </div>
+      <div class='modal-body'>
+        <form action='/join_wait_list' class='call_to_action_form mailchimp' method='post' role='form'>
+          <div class='fields'>
+            <input class='first_name' id='fname' name='FNAME' placeholder='First Name' type='text'>
+            <input class='email' id='email' name='EMAIL' placeholder='Email address' type='email'>
+            <button value=''>
+              I'm in
+            </button>
+            <small>
+Unsubscribe at any time
+</small>
+          </div>
+          <div class='feedback' style="display:block;">
+            <p>
+              Good job!
+            </p>
+            <p>
+              You can expect your first batch of job leads on Monday.
+            </p>
+            <p>
+              Onwards and upwards fellow designer!
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<section class='content' style="display:none;">
+  <div class='container'>
+    <div class='hidden-md hidden-lg'>
+      <div class='post_job box'>
+        <div class='content'>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-8'>
+        <section class='job_section'>
+        </section>
+      </div>
+      <div class='col-md-4'>
+        <div class='box_items'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

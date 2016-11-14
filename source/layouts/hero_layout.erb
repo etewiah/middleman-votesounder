@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title>
+    <%= current_page.data.title || "Middleman" %>
+  </title>
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag :hero %>
+    <%= javascript_include_tag :all %>
+      <meta content='Political discourse is broken - we have a solution.' name='description'>
+      <meta content='discourse politics' name='keywords'>
+      <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+      <script>
+      </script>
+</head>
+
+<body>
+  <%= yield %>
+
+  <footer class="">
+    <div style="" class="footer-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>VoteSounder: Better political discourse</h3>
+          </div>
+          <div class="col-sm-8">
+            <ul class="list-inline">
+              <li>
+                <div>Other VoteSounder productions:</div>
+              </li>
+              <li style="display:none;">
+                <a href="http://forkmyreligion.com" class=""><i class=""></i>ForkMyReligion</a>
+              </li>
+              <li>
+                <a href="http://weebrix.com" class=""><i class=""></i>WeeBrix</a>
+              </li>
+              <li>
+                <a href="http://pickingplaces.com" class=""><i class=""></i>PickingPlaces</a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h5></h5>
+            <p class="copyright-notice">Copyright © VoteSounder 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
