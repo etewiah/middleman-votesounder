@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%= stylesheet_link_tag :about %>
+
+</head>
+
+<body class="landing <%# @whitelabel.safe_title %>">
+  <div id="page-wrapper">
+    <!-- Header -->
+    <nav class="navbar navbar-default navbar-static-top" style="margin: 0px" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" style="display:none;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand" id="title">
+            <a id="ember471" href="/" class="ember-view active"> <span style="margin:0px">
+disp name
+        </span>
+              <span class="navbar-banner"></span>
+            </a> <span class="hidden-xs">            
+        </span>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav dropdown-nav navbar-right" style="display:none;">
+            <li class="current-user-anon dropdown">
+              <a class="icon header-user-icon" style="margin-top:5px;" data-dropdown="user-dropdown" data-render="renderUserDropdown" href="#" title="me" id="current-user-anon">
+               Welcome
+               <i style="margin-left:6px;" class="fa fa-chevron-down"></i>
+            </a>
+            </li>
+            <section class="d-dropdown" id="user-dropdown">
+              <ul class="user-dropdown-links">
+                <li><span class="btn" data-ember-action="478">Your home</span></li>
+                <!---->
+              </ul>
+            </section>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <%= yield %>
+      <!-- Footer -->
+      <!-- Footer -->
+  </div>
+  <footer class="">
+    <div style="" class="footer-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>VoteSounder: Better political discourse</h3>
+          </div>
+          <div class="col-sm-8">
+            <ul class="list-inline">
+              <li>
+                <div>Other VoteSounder productions:</div>
+              </li>
+              <li style="display:none;">
+                <a href="http://forkmyreligion.com" class=""><i class=""></i>ForkMyReligion</a>
+              </li>
+              <li>
+                <a href="http://weebrix.com" class=""><i class=""></i>WeeBrix</a>
+              </li>
+              <li>
+                <a href="http://pickingplaces.com" class=""><i class=""></i>PickingPlaces</a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+              <li>
+                <a href="#" class=""><i class=""></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h5></h5>
+            <p class="copyright-notice">Copyright © VoteSounder 2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
