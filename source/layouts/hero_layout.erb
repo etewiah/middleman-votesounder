@@ -10,7 +10,8 @@
     <%= current_page.data.title || "Middleman" %>
   </title>
   <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag :hero %>
+    <%= stylesheet_link_tag :hero %>
+    <%= stylesheet_link_tag :header %>
     <%= javascript_include_tag :all %>
       <meta content='Political discourse is broken - we have a solution.' name='description'>
       <meta content='discourse politics' name='keywords'>
@@ -20,6 +21,44 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-default navbar-static-top" style="margin: 0px" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" style="display:none;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-brand" id="title">
+            <a id="ember471" href="/" class="ember-view active"> 
+            <span style="margin:0px">VoteSounder</span>
+            <span class="navbar-banner"></span>
+            </a> 
+            <span class="hidden-xs"></span>
+          </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav dropdown-nav navbar-right" style="display:none;">
+            <li class="current-user-anon dropdown">
+              <a class="icon header-user-icon" style="margin-top:5px;" data-dropdown="user-dropdown" data-render="renderUserDropdown" href="#" title="me" id="current-user-anon">
+               Welcome
+               <i style="margin-left:6px;" class="fa fa-chevron-down"></i>
+            </a>
+            </li>
+            <section class="d-dropdown" id="user-dropdown">
+              <ul class="user-dropdown-links">
+                <li><span class="btn" data-ember-action="478">Your home</span></li>
+                <!---->
+              </ul>
+            </section>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
   <%= yield %>
 
   <footer class="">
